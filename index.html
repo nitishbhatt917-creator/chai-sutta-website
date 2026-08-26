@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Sutta - World Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>☕ Chai Sutta - World Clock</h1>
+            <p>Enjoy chai while tracking time across the globe</p>
+        </header>
+
+        <main>
+            <div class="timezone-selector">
+                <label for="timezone-input">Add Timezone:</label>
+                <select id="timezone-input">
+                    <option value="">-- Select a timezone --</option>
+                    <optgroup label="Asia">
+                        <option value="Asia/Kolkata">Asia/Kolkata (IST)</option>
+                        <option value="Asia/Bangkok">Asia/Bangkok (ICT)</option>
+                        <option value="Asia/Tokyo">Asia/Tokyo (JST)</option>
+                        <option value="Asia/Dubai">Asia/Dubai (GST)</option>
+                        <option value="Asia/Singapore">Asia/Singapore (SGT)</option>
+                        <option value="Asia/Hong_Kong">Asia/Hong Kong (HKT)</option>
+                        <option value="Asia/Shanghai">Asia/Shanghai (CST)</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="Europe/London">Europe/London (GMT/BST)</option>
+                        <option value="Europe/Paris">Europe/Paris (CET/CEST)</option>
+                        <option value="Europe/Berlin">Europe/Berlin (CET/CEST)</option>
+                        <option value="Europe/Moscow">Europe/Moscow (MSK)</option>
+                    </optgroup>
+                    <optgroup label="Americas">
+                        <option value="America/New_York">America/New York (EST/EDT)</option>
+                        <option value="America/Chicago">America/Chicago (CST/CDT)</option>
+                        <option value="America/Denver">America/Denver (MST/MDT)</option>
+                        <option value="America/Los_Angeles">America/Los Angeles (PST/PDT)</option>
+                        <option value="America/Toronto">America/Toronto (EST/EDT)</option>
+                    </optgroup>
+                    <optgroup label="Australia">
+                        <option value="Australia/Sydney">Australia/Sydney (AEDT/AEST)</option>
+                        <option value="Australia/Melbourne">Australia/Melbourne (AEDT/AEST)</option>
+                        <option value="Australia/Perth">Australia/Perth (AWST)</option>
+                    </optgroup>
+                    <optgroup label="Africa">
+                        <option value="Africa/Cairo">Africa/Cairo (EET)</option>
+                        <option value="Africa/Johannesburg">Africa/Johannesburg (SAST)</option>
+                        <option value="Africa/Lagos">Africa/Lagos (WAT)</option>
+                    </optgroup>
+                </select>
+                <button id="add-btn">Add Clock</button>
+            </div>
+
+            <div class="clocks-container" id="clocks-container">
+                <!-- Clocks will be dynamically added here -->
+            </div>
+        </main>
+
+        <footer>
+            <p>Sip chai, track time, explore the world ☕🌍</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
